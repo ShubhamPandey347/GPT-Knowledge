@@ -51,7 +51,20 @@ Repeatable procedures that should not need to be reconstructed from conversation
 
 ---
 
-## 4. Decisions
+## 4. Problems & Issues
+
+Persistent troubleshooting knowledge: failures, bugs, configuration problems, blockers, investigations, workarounds, and verified solutions.
+
+- [`problems/`](problems/) — problem and issue records
+- Record exact symptoms and error messages where useful.
+- Preserve failed troubleshooting attempts so they are not unnecessarily repeated.
+- Track status: Open / Investigating / Blocked / Resolved / Monitoring.
+- Link problems to the affected project, system, workflow, or decision.
+- Prefer verified solutions over speculation.
+
+---
+
+## 5. Decisions
 
 Durable decisions and their rationale.
 
@@ -61,7 +74,7 @@ Durable decisions and their rationale.
 
 ---
 
-## 5. Research
+## 6. Research
 
 Research notes and comparisons that may inform future decisions.
 
@@ -69,7 +82,7 @@ Research notes and comparisons that may inform future decisions.
 
 ---
 
-## 6. References
+## 7. References
 
 Reusable commands, configuration references, external documentation links, and concise technical cheat sheets.
 
@@ -77,7 +90,7 @@ Reusable commands, configuration references, external documentation links, and c
 
 ---
 
-## 7. Archive
+## 8. Archive
 
 Superseded information retained for historical context.
 
@@ -96,6 +109,7 @@ Classify
   ├── Project      → projects/
   ├── System       → systems/
   ├── Workflow     → workflows/
+  ├── Problem      → problems/
   ├── Decision     → decisions/
   ├── Research     → research/
   └── Reference    → references/
@@ -111,6 +125,7 @@ Record significant changes in CHANGELOG.md
 
 - **Current implementation:** project documentation and repository code.
 - **System state:** the relevant document under `systems/`.
+- **Known failures and fixes:** `problems/`.
 - **Why a decision was made:** `decisions/`.
 - **How to repeat a process:** `workflows/`.
 - **What was discovered:** `research/`.
@@ -141,4 +156,4 @@ For future repository maintenance, prefer:
 4. Update this index if a new top-level topic or project is introduced.
 5. Add a concise entry to `CHANGELOG.md` for significant knowledge changes.
 
-The repository is intended to be a **living knowledge base**, not a raw transcript dump. Store durable facts, decisions, architecture, workflows, and useful distilled context rather than entire conversations.
+The repository is intended to be a **living knowledge base**, not a raw transcript dump. Store durable facts, decisions, architecture, workflows, troubleshooting knowledge, and useful distilled context rather than entire conversations.
